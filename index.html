@@ -2,17 +2,128 @@
 <html>
 <head>
   <title>The 30 Minute Film Festival</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <link href="styles.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
 
-<h2>Welcome to the 30 Minute Film Festival 2020!</h1>
-<h3>this year's theme is</h3>
-<h1>i s o l a t i o n</h1>
-<p align="center">
-<img src="https://github.com/mlk525/mlk525.github.io/blob/master/test_movie.jpg" alt="test_movie" width="700">
-</p>
+    <header id="header" class="alt">
+      <nav>
+    <div id="n1">
+      <a href="#topmost">
+        <div id="brand">
+          Back to Top
+        </div>
+      </a>
+    </div>
+
+    <ul id="n2">
+      <a href="#one">
+        <li>
+          About
+        </li>
+      </a><a href="#two">
+        <li>
+          Films
+        </li>
+      </a><a href="#three">
+        <li>
+          Contribute
+        </li>
+      </a><a href="#four">
+        <li>
+          Contact
+        </li>
+      </a><a href="https://youtu.be/j8PxqgliIno" target="_blank">
+        <li>
+          DO NOT CLICK
+        </li>
+      </a>
+    </ul>
+    <label for="c" id="lh"></label>
+  </nav>
+    </header>
+
+  <section id="topmost">
+    <br></br>
+    <h1>Welcome to the 30 Minute Film Festival 2020!</h1>
+    <h3>this year's theme is</h3>
+    <h1>i s o l a t i o n</h1>
+    <p align="center">
+      <img src="test_movie.jpg" alt="test_movie.jpg" width="700">
+    </p>
+  </section>
+    <section id="one">
+      <div class="inner">
+        <header class="major">
+          <br></br>
+          <h2>Arcu aliquet vel lobortis ata nisl<br />
+          eget augue amet aliquet nisl cep donec</h2>
+          <p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
+          fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
+        </header>
+      </div>
+    </section>
+<section id="two">
+<div class="row">
+  <br></br>
+  <h2>Arcu aliquet vel lobortis ata nisl<br />
+  eget augue amet aliquet nisl cep donec</h2>
+  <p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
+  fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
+ <div class="column">
+ <script src="test.js"></script>
+   <img src="test_movie.jpg" alt="Nature" onclick="myFunction(this);" width=200>
+ </div>
+ <div class="column">
+   <img src="test_movie.jpg" alt="Snow" onclick="myFunction(this);" width=200>
+ </div>
+ <div class="column">
+   <img src="test_movie.jpg" alt="Mountains" onclick="myFunction(this);" width=200>
+ </div>
+ <div class="column">
+   <img src="test_movie.jpg" alt="Lights" onclick="myFunction(this);" width=200>
+ </div>
+</div>
+
+<!-- The expanding image container -->
+<div class="container">
+ <!-- Close the image -->
+ <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+ <!-- Expanded image -->
+ <img id="expandedImg" style="width:100%">
+</section>
+ <!-- Image text -->
+ <div id="imgtext"></div>
+</div>
+    <section id="three" class="wrapper alt style2">
+      <section class="spotlight">
+        <div class="image"><img src="images/pic01.jpg" alt="" /></div><div class="content">
+          <h2>Magna primis lobortis<br />
+          sed ullamcorper</h2>
+          <p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+        </div>
+      </section>
+      <section class="spotlight">
+        <div class="image"><img src="images/pic02.jpg" alt="" /></div><div class="content">
+          <h2>Tortor dolore feugiat<br />
+          elementum magna</h2>
+          <p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+        </div>
+      </section>
+      <section class="spotlight">
+        <div class="image"><img src="images/pic03.jpg" alt="" /></div><div class="content">
+          <h2>Augue eleifend aliquet<br />
+          sed condimentum</h2>
+          <a href="#one">Jump to Section 1</a>
+          <p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+        </div>
+      </section>
+    </section>
+
+
 <!-- Feel free to change this text here -->
 <p>
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
