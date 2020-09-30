@@ -1,5 +1,7 @@
+/*importing the font family Open Sans from google fonts*/ 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic");
 
+/*scroll smoothly to different parts of the page when internal links are clicked*/
 html{
   scroll-behavior: smooth;
 }
@@ -11,41 +13,42 @@ body {
 	color: gray;
 	margin: 0;
 	padding-top: 40px;
-  padding: 0 5%;
+  	padding: 0 5%;
 	text-align: justify;
 }
 
-/* The grid: Four equal columns that floats next to each other */
+/*code for the picture grid, which consists of four equal columns that float next to each other*/
 .column {
  float: left;
  width: 20%;
  padding: 20px;
 }
 
-/* Style the images inside the grid */
+/*styling images within grid*/
 .column img {
  opacity: 0.8;
  cursor: pointer;
 }
 
+/*make images "solidify" when hovering over them*/
 .column img:hover {
  opacity: 1;
 }
 
-/* Clear floats after the columns */
+/*clear floats after the columns*/
 .row:after {
  content: "";
  display: table;
  clear: both;
 }
 
-/* The expanding image container (positioning is needed to position the close button and the text) */
+/*the expanding image container (positioning is needed to position the close button and the text) (hidden at first)*/
 .container {
  position: relative;
  display: none;
 }
 
-/* Expanding image text */
+/*alt text of the expanded images*/
 #imgtext {
  position: absolute;
  bottom: 15px;
@@ -54,7 +57,7 @@ body {
  font-size: 20px;
 }
 
-/* Closable button inside the image */
+/*close button inside the image*/
 .closebtn {
  position: absolute;
  top: 10px;
@@ -64,7 +67,7 @@ body {
  cursor: pointer;
 }
 
-
+/*general styling for text types*/ 
 p {font-size: 1.2em; line-height: 1.2em; color: #333; }
 
 h1, h2, h3, h4 { font-family: 'Open Sans'; text-align: center;}
@@ -72,24 +75,26 @@ h1 { background-color: white; font-size: 3em; color:black; }
 h2 { font-size: 2.7em; }
 h3 { font-size: 2.3em; }
 h4 { font-size: 1.9em; }
-ul {
-	list-style: none;
-}
+
+/*styling for floating menu bar*/
+ul { list-style: none; }
 
 #n1 {
 	position: fixed;
 	top: 0;
 	left: 0;
 	z-index: 2;
-  color: white;
+  	color: white;
 }
+
 #brand {
 	font-weight: 400;
 	padding: 10px;
 	font-size: 1.2em;
 	transition: .2s;
-  color: white;
+  	color: white;
 }
+
 #n2 {
 	width: 100%;
 	position: fixed;
@@ -100,10 +105,12 @@ ul {
 	margin: 0;
 	padding: 0;
 }
+
 #brand:hover, #n2 li:hover, #l:hover {
 	color: black;
 	background: #fff;
 }
+
 #n2 li {
 	list-style-type: none;
 	display: inline-block;
@@ -112,12 +119,15 @@ ul {
 	transition: .2s;
 	font-size: 1.2em;
 }
+/*end of styling for floating menu bar*/
+
+/*styling for donate button (from w3 schools)*/
 .glowhover {
     width: 500px;
     height: 80px;
     font-family: 'Open Sans';
     font-weight: 500;
-  	font-size: 2em;
+    font-size: 2em;
     border: none;
     outline: none;
     color: #fff;
@@ -174,19 +184,21 @@ ul {
     50% { background-position: 400% 0; }
     100% { background-position: 0 0; }
 }
+/*end of styling for donate button (from w3 schools)*/
 
+/*styling for input fields in 'Request an Invitation'*/
 input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
   resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
-/* Style the submit button with a specific background color etc */
+/*styling for submit button*/
 input[type=submit] {
   background-color: grey;
   color: white;
@@ -196,12 +208,12 @@ input[type=submit] {
   cursor: pointer;
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
+/*darken color of submit button while hovering*/
 input[type=submit]:hover {
   background-color: black;
 }
 
-/* Add a background color and some padding around the form */
+/*background color and padding for the invitation form*/
 .container {
   border-radius: 5px;
   background-color: #f2f2f2;
