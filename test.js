@@ -1,12 +1,13 @@
+//script to make the photo gallery clickable (and consequently expandable)
 function myFunction(imgs) {
-  // Get the expanded image
+  //get the expanded image
   var expandImg = document.getElementById("expandedImg");
-  // Get the image text
+  //get the image text
   var imgText = document.getElementById("imgtext");
-  // Use the same src in the expanded image as the image being clicked on from the grid
+  //use the same source in the expanded image as the image being clicked on from the grid
   expandImg.src = imgs.src;
-  // Use the value of the alt attribute of the clickable image as text inside the expanded image
+  //use the value of the alt text attribute of the clicked image as alt text inside the expanded image
   imgText.innerHTML = imgs.alt;
-  // Show the container element (hidden with CSS)
+  //display container element (hidden by default in css)
   expandImg.parentElement.style.display = "block";
 } 
