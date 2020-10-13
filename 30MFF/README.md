@@ -3,7 +3,7 @@
 <details>
   <summary>Screenshot</summary>
   
-![mlk525.github.io](https://github.com/mlk525/mlk525.github.io/blob/master/screencap.jpg)
+![mlk525.github.io](images/screencap.jpg)
 </details>
 
 ## Description
