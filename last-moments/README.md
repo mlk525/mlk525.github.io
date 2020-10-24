@@ -20,11 +20,11 @@ Deciding on a look for the webpage and the comic was significantly harder; how d
 
 While it was difficult to explore such complex concepts in a relatively limited time, we tried to think of every minute detail that could facilitate better communication of our intended message. Some more of the artistic decisions we took include the lack of any 'on-screen' lines for Bob, not to mention the lack of a face or any real defining traits. In order to further dramatize the story and push the viewer into the deep end as it were, we started off with an out-of-context car crash on the very first page.
 
-![page_1](page-1.png)
+![page_1](https://github.com/mlk525/mlk525.github.io/blob/master/last-moments/panel-1.png)
 
 The last page isn't any less jarring. Simply a gif of a EKG monitor flatlining, the gif exists to bookend the comic with a heavily suggestive theme that ties back to the first page. A very important addition to the comic was ambient noise and sound effects wherever appropriate for each page. In our opinion, this helped immerse viewers more deeply in what was intended to be a dark and serious piece. Initially not part of our plan, we also came up with the idea of an epilogue for the aforementioned characters as well, briefly looking at how each of them finds out about Bob's passing. You can see this page in progress below:
 
-![page_5](page-5.png)
+![page_5](https://github.com/mlk525/mlk525.github.io/blob/master/last-moments/panel-5.png)
 
 The icons and imagery used for the website navigation and for displaying the comic itself were very carefully considered. By using a virtual hardbound book, an air of seriousness was conveyed that wouldn't normally be easy for what is essentially a webcomic. Beyond this, website navigation was a fairly straightforward process, as the entire project was contained on a single [page](https://ishmalkhalid.github.io/FinalMomentsComic/).
 
