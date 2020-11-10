@@ -171,8 +171,6 @@
 	};
 
 	var circles = [];
-	
-	view.viewSize = new Size(canvas.width, canvas.height);
 
 	function onKeyDown(event) {
 
@@ -221,7 +219,7 @@
 <body>
 	
 	<div id="container">
-		<canvas id="myCanvas" width=400 height=400></canvas>
+		<canvas id="myCanvas" resize></canvas>
         </div>
 	
 	<form>
