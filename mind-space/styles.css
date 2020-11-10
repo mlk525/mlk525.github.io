@@ -9,4 +9,14 @@ body{
 
 canvas{
 	width: 100%;
+      	position:absolute;
+      	left:0;
+      	top:0;
+      	z-index:0;
+}
+
+div{
+      	z-index:1;
+      	left:12px;
+      	top:10px;
 }
