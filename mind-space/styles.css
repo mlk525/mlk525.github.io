@@ -3,6 +3,10 @@ body, html{
 	margin: 0;
 }
 
+body{
+	background-image: url("https://icanbecreative.com/resources/files/articles/40-high-resolution-wallpapers-for-minimalist-lovers/sources/everest-minimalist-wallpaper-blue.png");	
+}
+
 canvas{
 	width: 100%;
 }
