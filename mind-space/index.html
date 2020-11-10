@@ -184,28 +184,25 @@
 			<!-- Pretty much doing Math.random() * maxPoint -->
 			var point = maxPoint * randomPoint;
 
-			var newCircle = new Path.Circle(point, 500);
+			var newCircle = new Path.Circle(point, 400);
 			newCircle.fillColor = keyData[event.key].color;
 			keyData[event.key].sound.play();
 			circles.push(newCircle);
-
-			<!-- Cant do this because push() pushes in the string "orange" since it is the last time returned -->
-			<!-- circles.push(new Path.Circle(point, 500).fillColor = "orange"); -->
 		}
 	}
 
-	<!-- On each frame perform animate - change hue color and scale circle size -->
+	<!-- On each frame perform animate - change hue color and circle opacity -->
 	function onFrame(event) {
 		<!-- Loop through all circles and perform animate -->
 		<!-- Optimization: need to remove circle once done -->
 		for(var i = 0; i < circles.length; i++) {
 			circles[i].fillColor.hue += 1;
 
-			<!-- Scales by 90% of the size -->
-			circles[i].scale(0.9);
+			<!-- reduces opacity to 80% -->
+			circles[i].opacity = (circles[i].opacity)*(0.8);
 
 			<!-- Remove circle from array if area is less than 1 -->
-			if(circles[i].area < 1) {
+			if(circles[i].opacity < 0.25) {
 				circles[i].remove();
 
 				<!-- splice(index, amound to remove) -->
@@ -220,7 +217,11 @@
 </script>
 </head>
 <body>
-	<canvas id="myCanvas" resize></canvas>
+	
+	<div id="container">
+		<canvas id="myCanvas" width=800 height=600></canvas>
+        </div>
+	
 	<form>
 		<label>Enter Text</label>
 		<input type="text" name="name" id="name"/>
