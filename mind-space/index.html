@@ -199,7 +199,7 @@
 			circles[i].fillColor.hue += 1;
 
 			<!-- reduces opacity to 90% -->
-			circles[i].opacity = (circles[i].opacity)*(0.9);
+			circles[i].opacity = (circles[i].opacity)*(0.95);
 
 			<!-- Remove circle from array if area is less than 1 -->
 			if(circles[i].opacity < 0.1) {
@@ -219,7 +219,7 @@
 <body>
 	
 	<div id="container">
-		<canvas id="myCanvas" width=800 height=600></canvas>
+		<canvas id="myCanvas" width=400 height=400></canvas>
         </div>
 	
 	<form>
