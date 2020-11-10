@@ -5,6 +5,7 @@ body, html{
 
 body{
 	background-image: url("https://icanbecreative.com/resources/files/articles/40-high-resolution-wallpapers-for-minimalist-lovers/sources/everest-minimalist-wallpaper-blue.png");	
+	background-size: contain;
 }
 
 canvas{
