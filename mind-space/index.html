@@ -184,7 +184,7 @@
 			<!-- Pretty much doing Math.random() * maxPoint -->
 			var point = maxPoint * randomPoint;
 
-			var newCircle = new Path.Circle(point, 400);
+			var newCircle = new Path.Circle(point, 100);
 			newCircle.fillColor = keyData[event.key].color;
 			keyData[event.key].sound.play();
 			circles.push(newCircle);
@@ -198,11 +198,11 @@
 		for(var i = 0; i < circles.length; i++) {
 			circles[i].fillColor.hue += 1;
 
-			<!-- reduces opacity to 80% -->
-			circles[i].opacity = (circles[i].opacity)*(0.8);
+			<!-- reduces opacity to 90% -->
+			circles[i].opacity = (circles[i].opacity)*(0.9);
 
 			<!-- Remove circle from array if area is less than 1 -->
-			if(circles[i].opacity < 0.25) {
+			if(circles[i].opacity < 0.1) {
 				circles[i].remove();
 
 				<!-- splice(index, amound to remove) -->
