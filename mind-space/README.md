@@ -12,7 +12,13 @@ Finally, when the 'Send' button is clicked, the letter is folded and pushed into
 # Process
 [Link to repository with code.](https://github.com/hessaala/hessaala.github.io/tree/master/mind-space)
 
-Tac
+While building the site, the visuals were largely kept similar to the initial wireframe Hessa designed. The lines in the background especially were an unexpected but welcome elemt to the site. As the user goes through each section of the site, the lines get less and less crowded, representing the mental clarity (hopefully) being achieved by the user. Keeping the color palette to generally muted and subtle tones (emphasizing on blue and violet), the theme of the website is relaxed and positive. The simple aesthetic and thought-out elements made it far easier and more fun to interact with the site while testing it.
+
+In terms of the interactive elements, the arrow to skip from the (somewhat lengthy) intro sound file straight to the letter writing was added as an afterthought when reviewing the functionality of the website. The intro audio can be stopped by both the arrow and the 'Send' button on the letter, ensuring the intro and outro sound files don't overlap. The animation of the letter being inserted into the envelope was part of our initial vision for the site, included to convey (as mentioned previously) a sense of closure for the user. We hoped to be able to include a feature where users could send their letters to others, but the process proved too complicated to implement. We also faced challenges when incorporating the "write a new letter" feature, which Hessa did an excellent job of working through.
+
+
+
+[Link to keyboard demo repo.](https://github.com/mlk525/mlk525.github.io/tree/master/mind-space)
 
 ![keyboard_test](keyboard-test.png)
 
