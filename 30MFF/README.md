@@ -1,9 +1,6 @@
 # ASSIGNMENT #1: [30MFF WEB SITE](https://mlk525.github.io/)
 
-<details>
-  <summary>Screenshot</summary>
-    ![mlk525.github.io](images/screencap.jpg)
-</details>
+![landing_page](images/screencap.jpg)
 
 ## Description
 A website to debut this year's 30MFF films. Designed to function as the landing page for a fictional film festival, the website pokes fun at its subject's non-existent nature quite a bit. Beyond serving as a sandbox for me to play around with the concepts we learned about in HTML, CSS and JavaScript, the website was created to give the unsuspecting user an initial impression of legitimate film festival-ness, which would crumble (hopefully in a humorous fashion) upon closer observation. With that in mind, I strived for a sort of minimialist look, going from classy and established to steadily more ridiculous content.
