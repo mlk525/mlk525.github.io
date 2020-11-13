@@ -16,7 +16,7 @@ While building the site, the visuals were largely kept similar to the initial wi
 
 In terms of the interactive elements, the arrow to skip from the (somewhat lengthy) intro sound file straight to the letter writing was added as an afterthought when reviewing the functionality of the website. The intro audio can be stopped by both the arrow and the 'Send' button on the letter, ensuring the intro and outro sound files don't overlap. The animation of the letter being inserted into the envelope was part of our initial vision for the site, included to convey (as mentioned previously) a sense of closure for the user. We hoped to be able to include a feature where users could send their letters to others, but the process proved too complicated to implement. We also faced challenges when incorporating the "write a new letter" feature, which Hessa did an excellent job of working through.
 
-
+While assembling the audio, I worked exclusively with Audacity; this presented a few challenges, but nothing a few plug-ins couldn't fix. Hessa and I recorded the dialogue for both the intro and outro using our phones, but because we were in different locations with different devices, making it seem like we were in the same room for the conversation took a lot of work. Following some very helpful suggestions from Kristin, I cleaned up the audio and used the Parametric EQ and Filter Curve functions to 
 
 [Link to keyboard demo repo.](https://github.com/mlk525/mlk525.github.io/tree/master/mind-space)
 
