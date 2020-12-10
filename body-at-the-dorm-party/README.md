@@ -8,7 +8,9 @@
 
 Intended to parody some of the more dramatic tropes in mystery, thriller, and "[whodunit](https://en.wikipedia.org/wiki/Whodunit)" genres, BDP makes use of exaggerated mannerisms, overly melodramatic themes and sound effects, and gaudy visuals to realize this goal. After examining evidence and suspect interviews, the user is expected to make a guess as to who the murderer is, as well as arranging the order of events associated with the pieces of evidence.
 
-![image_1](image_1.jpg)
+<p align="center">
+  <img width="700" src="image_1.jpg">
+</p>
 
 Solving the mystery correctly will play a final video concluding the arc. While solving the mystery is very rewarding, our intention for the site was to entertain simply by using it. The project was conceived with humor as a priority, making the user laugh a little (or a lot), and I feel the videos and overarching site experience reflects that. 
 
