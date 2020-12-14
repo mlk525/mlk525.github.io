@@ -1,4 +1,4 @@
-# ASSIGNMENT #2: [LAST MOMENTS INTERACTIVE COMIC](https://ishmalkhalid.github.io/FinalMomentsComic/)
+# ASSIGNMENT #2: [LAST MOMENTS INTERACTIVE COMIC](https://ishmalkhalid.github.io/LastMomentsComic/)
 
 ![landing page](last_moments.png)
 
@@ -10,7 +10,7 @@ An additional idea we wanted to explore was the concept of a second-person narra
 Ultimately we decided to have the comic follow three characters during the last day of the life of an ambiguous person (named Bob). The goal was to invoke a sense of the impermanence of life, and to draw attention to the experiences of the living during such tragedies.
 
 # Process
-[Link to repository with code.](https://github.com/ishmalkhalid/FinalMomentsComic)
+[Link to repository with code.](https://github.com/ishmalkhalid/LastMomentsComic)
 
 Tackling such a sensitive theme was challenging, but by focusing on the message we were trying to convey, our group was quickly able to work out a storyboard of what we wanted to convey. Of course, this underwent many changes during the course of the project, but the core idea stayed the same: Bob dies, but this story isn't about Bob.
 
