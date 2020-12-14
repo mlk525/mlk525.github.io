@@ -1,0 +1,169 @@
+<!--LAST MOMENTS WEBSITE-->
+<!DOCTYPE html>
+<html lang = "en" dir = "ltr">
+<head>
+    <meta charset = "utf-8" >
+    <title>LAST MOMENTS...</title>
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "styles.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!--    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>-->
+    <script src="p5.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <!--   LANDING PAGE OF THE WEBSITE   -->
+    <section class="landing-page">
+
+        <!--   NAVIGATION BAR   -->
+        <nav class="navbar">
+            <div>
+                <img id = "closedbook" class="closedbookicon" src="Images/closedbookicon.png" alt="closedbookicon">
+                <img id = "openbook" class="bookicon" src="Images/book.png" alt="bookicon">
+            </div>
+            <div>     
+                <img id="bookmark1" class="bookmark" src="Images/bookmark.png" alt="bookmark">
+                <div class="bookmarktxt"> 
+                    <a href="#comic-sect"><h6 id="one" style="color:black;">COMIC</h6></a>
+                </div>
+                
+                <img id="bookmark2" class="bookmark" src="Images/bookmark.png" alt="bookmark">
+                <div class="bookmarktxt"> 
+                    <a href="#team-sect"><h6 id="two" style="color:black;">TEAM</h6></a>
+                </div>
+                
+                <img id="bookmark3" class="bookmark" src="Images/bookmark.png" alt="bookmark">
+                <div class="bookmarktxt"> 
+                    <a href="#about-sect" ><h6 id="three" style="color:black;">ABOUT</h6></a>
+                </div>
+
+            </div>
+        </nav>
+        <div class="title">Last Moments</div>
+    </section>
+    
+    <!--   VIDEO SEPARATOR  -->
+    <section id="quote-sect">
+        <video id="video" src="Images/quotevid.mp4" playsinline loop muted></video>
+    </section>
+    
+    <script src="sketch.js"></script>
+
+    <!--  COMIC BOOK SECTION  -->
+    <section id="comic-sect">
+        <div class = 'margins' data-aos ="zoom-in-up" data-aos-offset="200" data-aos-duration="500">  
+            <div id="flipbook">
+                <div class=" hard booktitle"> Last Moments </div> 
+                <div class="hard"></div>
+                <div class="preface">
+                    <p>When will your last moment come?<br>
+                    When it does, will the people in your life know?</p>
+                </div>
+                <div class="ambulance">
+                    <img class="panel sound" src="Images/panel-1.png">
+                    <audio id="ambsound" src="sounds/ambulance.mp3" volume="0.1"></audio>
+                </div>
+                <div class="coffee">
+                    <img class="panel sound" src="Images/panel-2.png">
+                    <audio id="cofsound" src="sounds/coffee.mp3" volume="0.4"></audio>
+                </div>
+                <div class="office">
+                    <img class="panel sound" src="Images/panel-3.png">
+                    <audio id="offsound" src="sounds/office.mp3" volume="0.4"></audio>
+                </div>
+                <div class="phone">
+                    <img class="panel sound" src="Images/panel-4.png">
+                    <audio id="phonesound" src="sounds/phone.mp3" volume="0.4"></audio>
+                </div>
+<!--                <div><img class="panel" src="Images/panel-5.png"></div>-->
+                <div><img id="flatline" style="background-color: black" src="Images/flatline.gif" autoplay muted></div>
+                
+                <div class="hard">></div>
+                <div class="hard"></div>
+
+            </div>
+                <!-- Note: Strange bug with turnjs requires me to put this script here
+                and the rest in a different file... -->
+                <script>
+                    $(".phone").click(function(){
+                        var sounds = document.getElementsByTagName('audio');
+                        for(let i=0; i<sounds.length; i++) sounds[i].pause();
+                        document.getElementById("phonesound").play();
+                    });
+                </script>
+        </div>
+    </section>
+    
+    <!--  TEAM SECTION  -->
+    <section id="team-sect">
+        <div class="team" data-aos ="zoom-in-up" data-aos-delay = "200"> OUR TEAM</div>
+        <div class="members">
+            
+<!--            ISHMAL KHALID-->
+            <div data-aos ="flip-right" data-aos-delay = "200">
+                <img class="teamimg" src="Images/ishmalimg.png" alt="">
+                <div><h2>Ishmal Khalid</h2></div>
+                <div><p>WEB DEVELOPER</p></div>
+            </div>
+            
+<!--            MATTHEW VARONA-->
+            <div data-aos ="flip-right" data-aos-delay = "200">
+                <img class="teamimg" src="Images/matthewimg.jpg" alt="">
+                <div><h2>Matthew Varona</h2></div>
+                <div><p>WEB DEVELOPER</p></div>
+            </div>
+
+<!--           Thanh Loan Hoang-->
+            <div data-aos ="flip-right" data-aos-delay = "200">
+                <img class="teamimg" src="Images/loanimg.png" alt="">
+                <div><h2>Thanh Loan Hoang</h2></div>
+                <div><p>SCRIPTWRITER</p></div>
+            </div>
+
+<!--           Michael Leo-->
+            <div data-aos ="flip-right" data-aos-delay = "200">
+                <img class="teamimg" src="Images/mikeimg.png" alt="">
+                <div><h2>Michael Leo</h2></div>
+                <div><p>ILLUSTRATOR</p></div>
+            </div>
+        </div>
+    </section>
+    
+<!--    ABOUT SECTION-->
+    <section id="about-sect" >
+        <div class="abouttitle" data-aos ="zoom-in-up" data-aos-delay = "200">About us</div>
+<!--        <div><img src="Images/comicx.png"></div>-->
+<!--        <div class="abouttext" data-aos ="fade-up-right" data-aos-delay = "200" style = "color: yellow;">Lorem ipsum dipsum shipshum</div>-->
+        <div><img class="aboutimage" src="Images/aboutbook.png" data-aos ="zoom-in-up" data-aos-delay = "200"></div>
+    </section>
+    
+<!--    FOOTER SECTION-->
+    <section id="footer">
+        <p>COPYRIGHT &copy 2020 LAST MOMENTS. All Rights Reserved.</p>
+    </section>
+    
+<!--    SCRIPTS-->
+    <script src="turn.js"></script>
+
+    <script>
+    $("#flipbook").turn({
+        width: 900,
+        height: 500,
+        autoCenter: true
+    });
+    </script>
+        
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type = "text/javascript">
+      AOS.init();
+    </script>
+        
+    <script src="audio.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
