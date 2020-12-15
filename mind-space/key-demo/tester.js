@@ -1,158 +1,158 @@
 var keyData = {
 		q: {
 			sound: new Howl({
-	  		src: ['assets/sounds/c2.ogg']
+	  		src: ['https://github.com/mlk525/mlk525.github.io/blob/master/mind-space/assets/sounds/c2.ogg']
 			}),
 			color: '#1abc9c'
 		},
 		w: {
 			sound: new Howl({
-	  		src: ['assets/sounds/e2.ogg']
+	  		src: ['https://github.com/mlk525/mlk525.github.io/blob/master/mind-space/assets/sounds/e2.ogg']
 			}),
 			color: '#2ecc71'
 		},
 		e: {
 			sound: new Howl({
-	  			src: ['assets/sounds/g2.ogg']
+	  			src: ['https://github.com/mlk525/mlk525.github.io/blob/master/mind-space/assets/sounds/g2.ogg']
 			}),
 			color: '#3498db'
 		},
 		r: {
 			sound: new Howl({
-	  			src: ['assets/sounds/c3.ogg']
+	  			src: ['https://github.com/mlk525/mlk525.github.io/blob/master/mind-space/assets/sounds/c3.ogg']
 			}),
 			color: '#9b59b6'
 		},
 			t: {
 			sound: new Howl({
-	  			src: ['assets/sounds/e3.ogg']
+	  			src: ['https://github.com/mlk525/mlk525.github.io/blob/master/mind-space/assets/sounds/e3.ogg']
 			}),
 			color: '#34495e'
 		},
 		y: {
 			sound: new Howl({
-	  			src: ['assets/sounds/g3.ogg']
+	  			src: ['https://github.com/mlk525/mlk525.github.io/blob/master/mind-space/assets/sounds/g3.ogg']
 			}),
 			color: '#16a085'
 		},
 		u: {
 			sound: new Howl({
-	  			src: ['assets/sounds/c4.ogg']
+	  			src: ['https://github.com/mlk525/mlk525.github.io/blob/master/mind-space/assets/sounds/c4.ogg']
 			}),
 			color: '#27ae60'
 		},
 		i: {
 			sound: new Howl({
-	  			src: ['assets/sounds/e4.ogg']
+	  			src: ['https://github.com/mlk525/mlk525.github.io/blob/master/mind-space/assets/sounds/e4.ogg']
 			}),
 			color: '#2980b9'
 		},
 		o: {
 			sound: new Howl({
-				src: ['assets/sounds/g4.ogg']
+				src: ['https://github.com/mlk525/mlk525.github.io/blob/master/mind-space/assets/sounds/g4.ogg']
 			}),
 			color: '#8e44ad'
 		},
 		p: {
 			sound: new Howl({
-	  			src: ['assets/sounds/c5.ogg']
+	  			src: ['https://github.com/mlk525/mlk525.github.io/blob/master/mind-space/assets/sounds/c5.ogg']
 			}),
 			color: '#2c3e50'
 		},
 		a: {
 			sound: new Howl({
-	  			src: ['assets/sounds/e5.ogg']
+	  			src: ['https://github.com/mlk525/mlk525.github.io/blob/master/mind-space/assets/sounds/e5.ogg']
 			}),
 			color: '#f1c40f'
 		},
 		s: {
 			sound: new Howl({
-	  			src: ['assets/sounds/g5.ogg']
+	  			src: ['https://github.com/mlk525/mlk525.github.io/blob/master/mind-space/assets/sounds/g5.ogg']
 			}),
 			color: '#e67e22'
 		},
 			d: {
 			sound: new Howl({
-	  			src: ['assets/sounds/c6.ogg']
+	  			src: ['https://github.com/mlk525/mlk525.github.io/blob/master/mind-space/assets/sounds/c6.ogg']
 			}),
 			color: '#e74c3c'
 		},
 		f: {
 			sound: new Howl({
-	  			src: ['assets/sounds/e6.ogg']
+	  			src: ['https://github.com/mlk525/mlk525.github.io/blob/master/mind-space/assets/sounds/e6.ogg']
 			}),
 			color: '#95a5a6'
 		},
 		g: {
 			sound: new Howl({
-	  			src: ['assets/sounds/g6.ogg']
+	  			src: ['https://github.com/mlk525/mlk525.github.io/blob/master/mind-space/assets/sounds/g6.ogg']
 			}),
 			color: '#f39c12'
 		},
 		h: {
 			sound: new Howl({
-	  			src: ['assets/sounds/c2.ogg']
+	  			src: ['https://github.com/mlk525/mlk525.github.io/blob/master/mind-space/assets/sounds/c2.ogg']
 			}),
 			color: '#d35400'
 		},
 		j: {
 			sound: new Howl({
-	  			src: ['assets/sounds/e2.ogg']
+	  			src: ['https://github.com/mlk525/mlk525.github.io/blob/master/mind-space/assets/sounds/e2.ogg']
 			}),
 			color: '#1abc9c'
 		},
 		
 		k: {
 			sound: new Howl({
-	  			src: ['assets/sounds/g2.ogg']
+	  			src: ['https://github.com/mlk525/mlk525.github.io/blob/master/mind-space/assets/sounds/g2.ogg']
 			}),
 			color: '#2ecc71'
 		},
 		l: {
 			sound: new Howl({
-	  			src: ['assets/sounds/c3.ogg']
+	  			src: ['https://github.com/mlk525/mlk525.github.io/blob/master/mind-space/assets/sounds/c3.ogg']
 			}),
 			color: '#3498db'
 		},
 		z: {
 			sound: new Howl({
-	  			src: ['assets/sounds/e3.ogg']
+	  			src: ['https://github.com/mlk525/mlk525.github.io/blob/master/mind-space/assets/sounds/e3.ogg']
 			}),
 			color: '#9b59b6'
 		},
 		x: {
 			sound: new Howl({
-	  			src: ['assets/sounds/g3.ogg']
+	  			src: ['https://github.com/mlk525/mlk525.github.io/blob/master/mind-space/assets/sounds/g3.ogg']
 			}),
 			color: '#34495e'
 		},
 		c: {
 			sound: new Howl({
-	  			src: ['assets/sounds/c4.ogg']
+	  			src: ['https://github.com/mlk525/mlk525.github.io/blob/master/mind-space/assets/sounds/c4.ogg']
 			}),
 			color: '#16a085'
 		},
 		v: {
 			sound: new Howl({
-	  			src: ['assets/sounds/e4.ogg']
+	  			src: ['https://github.com/mlk525/mlk525.github.io/blob/master/mind-space/assets/sounds/e4.ogg']
 			}),
 			color: '#27ae60'
 		},
 		b: {
 			sound: new Howl({
-	  			src: ['assets/sounds/g4.ogg']
+	  			src: ['https://github.com/mlk525/mlk525.github.io/blob/master/mind-space/assets/sounds/g4.ogg']
 			}),
 			color: '#2980b9'
 		},
 		n: {
 			sound: new Howl({
-				src: ['assets/sounds/c5.ogg']
+				src: ['https://github.com/mlk525/mlk525.github.io/blob/master/mind-space/assets/sounds/c5.ogg']
 			}),
 			color: '#8e44ad'
 		},
 		m: {
 			sound: new Howl({
-	  			src: ['assets/sounds/e5.ogg']
+	  			src: ['https://github.com/mlk525/mlk525.github.io/blob/master/mind-space/assets/sounds/e5.ogg']
 			}),
 			color: '#2c3e50'
 		}
