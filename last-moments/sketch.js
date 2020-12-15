@@ -50,7 +50,7 @@ function mouseWheel(event) {
       pos = width+100;
     }
     if(pos < width+50){
-      return false;
+      pos = 0;
     }
   }
 }
