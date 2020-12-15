@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Andika&display=swap" rel="stylesheet">
+    <script src="jquery-3.5.1.min.js"></script>
+    <title>Mind Space</title>
+    <script src="paper.js"></script>
+    <script src="howler.js"></script>
+    <script type = "text/paperscript" src="keyboard.js" canvas="myCanvas"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<!--landing page-->
+  <script>
+    var intro = new Howl({
+      src: ['assets/sounds/intro_v1.ogg']
+     /* onplay: function() {
+          var x = document.getElementById("downarrow");
+          if(intro.pos() > 110){
+            x.style.visibility = "visible";}
+          else{
+            x.style.visibility = "hidden";}
+       } */
+    });
+      
+      var outro = new Howl({
+      src: ['assets/sounds/outro_v1.ogg']
+    });
+    
+    function hideTest() {
+    intro.play();
+    var x = document.getElementById("message");
+    x.style.visibility = "hidden";
+    }
+    
+    function showTest() {
+    intro.pause();
+    intro.stop();
+    }
+      
+    function finalTest() {
+    intro.pause();
+    intro.stop();
+    outro.play();
+    }
+  </script>
+    
+  <div id="background">
+    <h1> Mind Space </h1>
+    <div id= "message"> 
+      <img src="headphones.png" alt="headphones">
+      <p>Use headphones for better experience</p>
+      <p><a href="#background2" class="class1" onclick="hideTest();"> OK </p></a>
+    </div>
+  </div>
+
+  <div id="background2">
+    <h2>Mind Space</h2>
+    <h2 class="class2">An auditory letter writing experience</h2></a>
+        <a href="#background3" onclick="showTest();">
+        <div class="arrow" id="downarrow">
+                <span></span>
+                <span></span>
+                <span></span>
+        </div>
+        </a>
+  </div>
+
+    <div id="background3">
+    <canvas id="myCanvas" resize></canvas>
+    <div class="wrapper centered">
+      <article class="letter">
+        <div class="side">
+          <textarea placeholder="Your letter" maxlength="270" ></textarea>
+        </div>
+        
+        <div class="side">
+          <input type="text" placeholder="Your name" maxlength="20">
+            <button id="sendLetter" onclick="finalTest();">Send</button>
+        </div>
+      </article>
+      <div class="envelope front"></div>
+      <div class="envelope back"></div>
+    </div>
+    <p class="result-message centered">Thank you for your letter</p>
+    <div class="footer">
+        <h3><a href="#background3" class="class3" onclick="removeClass (); reloadDIV ();"> write a new letter </h3></a>
+        <div class="learnmore">
+            <h3><a href="https://www.ispn-psych.org/international-links" class="class3">learn more</h3></a>
+            <span class="learnmoretext">Hi, if you are struggling, know that there are always people willing to listen: Beyond Blue (1300 22 4636) 
+             <br> Lifeline (13 11 14) <br> NYUAD (02 628 5555)</span>
+        </div>
+    </div>
+  </div>
+</body>
+
+<script src="script.js"></script>
+</html>
+
