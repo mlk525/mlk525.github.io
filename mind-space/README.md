@@ -20,7 +20,7 @@ While assembling the audio, I worked exclusively with Audacity; this presented a
 
 The musical keyboard was a part of the concept from the start, so I had begun experimenting with it from day one. The [github repo](https://github.com/VasuGoel/Patatap-Clone) I used to implement the first prototype is a clone of [Patatap](https://patatap.com/), which is an animation and sound website. Pressing any key from A to Z would produce a note from the C Major arpeggio (C, E, G). I used the [Howler.js](https://howlerjs.com/) JavaScript sound library to implement the playing of the notes, which I found on an online open source sound library. 
 
-[Link to keyboard demo repo.](https://github.com/mlk525/mlk525.github.io/tree/master/mind-space)
+[Link to keyboard demo repo.](https://github.com/mlk525/mlk525.github.io/tree/master/mind-space/key-demo)
 
 I was able to achieve the desired effect with the keyboard quite quickly, and I decided to work with [Paper.js](http://paperjs.org/) to create simple animations to go with the sounds. My experience with Processing helped to animate the circles. The site is still up [here](https://mlk525.github.io/mind-space/).
 
