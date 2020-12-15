@@ -1,0 +1,93 @@
+<!DOCTYPE html><html lang="en">
+<head>
+	<title>The Body at the Dorm Party</title>
+	<script src="js/p5.js"></script>
+	<link rel="icon" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="master.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+</head>
+	<body class="board">
+		<h1 class="evidence-title">SOLVE THE MYSTERY</h1>
+
+		<div class="solve-container">
+			<div class="solve-col  select-col">
+				<h2 class="solve-sub">Select a Suspect</h2>
+				<div class="solve-pic selectable" id="theater">
+					<img src="images/theater.png">
+				</div>
+				<div class="solve-pic selectable" id="econ">
+					<img src="images/econ.png">
+				</div>
+				<div class="solve-pic selectable" id="histo">
+					<img src="images/history.png">
+				</div>
+			</div>
+			<div class="solve-col drag-col">
+				<h2 class="solve-sub">Order the Events</h2>
+				<!-- <div class="solve-pic draggable" id="ice"> -->
+					<img class="solve-pic draggable" id="ice" src="images/icecream.png">
+				<!-- </div> -->
+				<!-- <div class="solve-pic draggable" id="soy"> -->
+					<img class="solve-pic draggable" id="soy" src="images/bottle.png">
+				<!-- </div> -->
+				<!-- <div class="solve-pic draggable" id="red"> -->
+					<img class="solve-pic draggable" id="red" src="images/fish.png">
+				<!-- </div> -->
+			</div>
+			<div class="solve-col button-col">
+				<a href="#" class="button solve" onclick="checkAnswer();">SOLVE!</a>
+			</div>
+			<h1 class="info-check" onclick="openEviInfo();">i</h1>
+			<h1 class="return-to-evi" onclick="window.location.replace('table.html');">←</h1>
+		</div>
+
+		<div class="popup evi-info active">
+			<div class="evi-text">
+				<h1>It's time to solve the mystery!</h1>
+				<p>
+					Now that you've heard from all 3 witnesses and thoroughly reviewed the evidence, it's time to figure out who was behind tonight's tragic murder. Select one person to accuse, and arrange the events in the order they occurred.<br><br>
+					Need to take another look at the evidence? Click <a href="table.html" class="here">here</a> (or in the button in the upper left hand corner) to return to the evidence board.
+				</p>
+			</div>
+			<h1 class="close" onclick="closeEviInfo();">X</h1>
+		</div>
+
+		<div class="popup wrong-ans">
+			<div class="evi-text">
+				<h1>Not quite!</h1>
+				<p>
+					Your answer isn't quite correct! Think about all the evidence you've seen so far, and try again.<br><br>
+					Need to take another look at the evidence? Click <a href="table.html" class="here">here</a> (or in the button in the upper left hand corner) to return to the evidence board.
+				</p>
+			</div>
+			<h1 class="close" onclick="incorrect();">X</h1>
+		</div>
+
+		<div class="popup win-video">
+			<video src="videos/solved.mp4" controls="true"></video>
+			<script type="text/javascript">
+				let winVideo = document.querySelector(".popup.win-video video");
+				winVideo.onended = function(){
+					window.location.replace("congrats.html");
+					console.log("Ligma");
+				}
+			</script>
+		</div>
+
+		<script src="js/jquery-3.5.1.min.js"></script>
+		<script src="js/jquery-ui.js"></script>
+		<script src="js/script.js"></script>
+		<script type="text/javascript">
+			$(".drag-col").sortable({
+				opacity: 0.5,
+				cursor: "grabbing",
+				tolerance: "pointer",
+				items: ":not(.solve-sub)"
+			});
+			$(".select-col").selectable();
+		</script>
+	</body>
+</html>

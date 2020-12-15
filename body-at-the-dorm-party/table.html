@@ -1,0 +1,57 @@
+<!DOCTYPE html><html lang="en">
+<head>
+	<title>The Body at the Dorm Party</title>
+	<script src="js/p5.js"></script>
+	<link rel="icon" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="master.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+</head>
+	<body class="board">
+		<h1 class="evidence-title">EVIDENCE BOARD</h1>
+		<div class="evidence-container">
+			<div class="evidence-row">
+				<div class="evidence-pic">
+					<img src="images/icecream.png" onclick="showEviVideo('4');">
+				</div>
+				<div class="evidence-pic">
+					<img src="images/bottle.png" onclick="showEviVideo('5');">
+				</div>
+				<div class="evidence-pic">
+					<img src="images/fish.png" onclick="showEviVideo('6');">
+				</div>
+			</div>
+			<div class="evidence-row">
+				<div class="evidence-pic">
+					<img src="images/theater.png" onclick="showEviVideo('1');">
+				</div>
+				<div class="evidence-pic">
+					<img src="images/econ.png" onclick="showEviVideo('2');">
+				</div>
+				<div class="evidence-pic">
+					<img src="images/history.png" onclick="showEviVideo('3');">
+				</div>
+			</div>
+			<a href="solve.html" class="button done">DONE!</a>
+			<h1 class="info-check" onclick="openEviInfo();">i</h1>
+		</div>
+
+		<div class="popup evi-info active">
+			<div class="evi-text">
+				<h1>There's been a murder at the dorm party!</h1>
+				<p>
+					On a dark and stormy night, the RA Aiyma Boddy was murdered! It's up to you to help Detective Kobenova solve this case. We've identified 3 possible suspects for the murder, as well as 3 pieces of evidence. <br><br> Click each image to find out more about the murder. Once you feel like you're ready to solve the murder, click "Done!". Good luck, detective!
+				</p>
+			</div>
+			<h1 class="close" onclick="closeEviInfo();">X</h1>
+		</div>
+
+		<div class="popup evi-video">
+			<video src="videos/video1.mp4" controls="true"></video>
+			<h1 class="close" onclick="closeEviVideo();">X</h1>
+		</div>
+		<script src="js/script.js"></script>
+	</body>
+</html>
