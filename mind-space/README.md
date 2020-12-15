@@ -1,4 +1,4 @@
-# ASSIGNMENT #3: [MIND SPACE (Web-Based Audio Experience)](https://hessaala.github.io/mind-space/)
+# ASSIGNMENT #3: [MIND SPACE (Web-Based Audio Experience)](https://mlk525.github.io/mind-space/)
 
 ![landing page](landing-page.png)
 
@@ -10,7 +10,7 @@ The blank letter allows the user to fill up to 10 lines of text, in addition to 
 Finally, when the 'Send' button is clicked, the letter is folded and pushed into an envelope (an animation intended to convey a sense of closure), and the final sound file plays. The creators (again, Hessa and I) address the user, giving them to choice to write another letter or learn more about mental health through listed resources. 
 
 # Process
-[Link to repository with code.](https://github.com/hessaala/hessaala.github.io/tree/master/mind-space)
+[Link to repository with code.](https://github.com/mlk525/mlk525.github.io/tree/master/mind-space)
 
 While building the site, the visuals were largely kept similar to the initial wireframe Hessa designed. The lines in the background especially were an unexpected but welcome elemt to the site. As the user goes through each section of the site, the lines get less and less crowded, representing the mental clarity (hopefully) being achieved by the user. Keeping the color palette to generally muted and subtle tones (emphasizing on blue and violet), the theme of the website is relaxed and positive. The simple aesthetic and thought-out elements made it far easier and more fun to interact with the site while testing it.
 
