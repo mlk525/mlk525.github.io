@@ -1,4 +1,4 @@
-# ASSIGNMENT #4: [THE BODY AT THE DORM PARTY](https://mjvar.github.io/body-at-the-dorm-party/)
+# ASSIGNMENT #4: [THE BODY AT THE DORM PARTY](https://mlk525.github.io/body-at-the-dorm-party/)
 ## (Interactive Video Piece)
 
 ![landing page](landing_page.png)
@@ -15,7 +15,7 @@ Intended to parody some of the more dramatic tropes in mystery, thriller, and "[
 Solving the mystery correctly will play a final video concluding the arc. While solving the mystery is very rewarding, our intention for the site was to entertain simply by using it. The project was conceived with humor as a priority, making the user laugh a little (or a lot), and I feel the videos and overarching site experience reflects that. 
 
 # Process
-[Link to repository with video files and code.](https://github.com/mjvar/body-at-the-dorm-party)
+[Link to repository with video files and code.](https://github.com/mlk525/mlk525.github.io/tree/master/body-at-the-dorm-party)
 
 For this project, my main role was creative direction, including script writing, coordinating filming, and editing the final videos. After we settled on the idea and fleshed it out, I got to work on a script (you can find a later draft [here](https://docs.google.com/document/d/1Y77dlHRMxfMHkk2yU6FXiQywgz63FphFgXG5HPrdUls/edit?usp=sharing)). To communicate the themes appropriately, I drew from my experiences with famous murder mystery media, ranging from Agatha Christie to Cluedo to TikTok videos. We went into recording the shots fairly quickly, taking advantage of the long break to finish as much of the "leg work" as we could. I also left the script in a very flexible place, to rework it during filming. I find dialogue works better when it's closer to the real life "voices" of people playing the parts, so revising the script during filming gave me an opportunity to do that.
 
