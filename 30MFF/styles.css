@@ -1,4 +1,4 @@
-/*importing the font family Open Sans from google fonts*/ 
+/*importing the font family Open Sans from google fonts*/
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic");
 
 /*scroll smoothly to different parts of the page when internal links are clicked*/
@@ -67,7 +67,7 @@ body {
  cursor: pointer;
 }
 
-/*general styling for text types*/ 
+/*general styling for text types*/
 p {font-size: 1.2em; line-height: 1.2em; color: #333; }
 
 h1, h2, h3, h4 { font-family: 'Open Sans'; text-align: center;}
@@ -190,11 +190,11 @@ ul { list-style: none; }
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid #ccc; 
-  border-radius: 4px; 
-  box-sizing: border-box; 
-  margin-top: 6px; 
-  margin-bottom: 16px; 
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
   resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 

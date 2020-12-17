@@ -118,7 +118,7 @@ var keyData = {
 			}),
 			color: '#1abc9c'
 		},
-		
+
 		k: {
 			sound: new Howl({
 	  			src: ['assets/sounds/g2.ogg'],
@@ -188,44 +188,43 @@ var keyData = {
 
 	function onKeyDown(event) {
 
-		<!-- If truthy (if keyData exists do this else dont do anything) -->
+		//If truthy (if keyData exists do this else dont do anything)
 		if(keyData[event.key]) {
 			var maxPoint = new Point(view.size.width, view.size.height);
 
-			<!-- Basically it is doing this: new Point(Math.random(), Math.random()) -->
+			//Basically it is doing this: new Point(Math.random(), Math.random())
 			var randomPoint = Point.random();
 
-			<!-- Pretty much doing Math.random() * maxPoint -->
+			//Pretty much doing Math.random() * maxPoint
 			var point = maxPoint * randomPoint;
 
 			var newCircle = new Path.Circle(point, 100);
 			newCircle.fillColor = keyData[event.key].color;
-			
+
 			keyData[event.key].sound.play();
 			circles.push(newCircle);
 		}
 	}
 
-	<!-- On each frame perform animate - change hue color and circle opacity -->
+	//On each frame perform animate - change hue color and circle opacity
 	function onFrame(event) {
-		<!-- Loop through all circles and perform animate -->
-		<!-- Optimization: need to remove circle once done -->
+		//Loop through all circles and perform animate
+		//Optimization: need to remove circle once done
 		for(var i = 0; i < circles.length; i++) {
 			circles[i].fillColor.hue += 1;
 
-			<!-- reduces opacity to 90% -->
+			//reduces opacity to 90% -->
 			circles[i].opacity = (circles[i].opacity)*(0.95);
 
-			<!-- Remove circle from array if area is less than 1 -->
+			//Remove circle from array if area is less than 1 -->
 			if(circles[i].opacity < 0.1) {
 				circles[i].remove();
 
-				<!-- splice(index, amound to remove) -->
+				//splice(index, amound to remove) -->
 				circles.splice(i, 1);
 
-				<!-- Console array shrinks till it is empty -->
+				//Console array shrinks till it is empty -->
 				console.log(circles);
 			}
 		}
 	}
-

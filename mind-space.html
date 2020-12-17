@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Basic Page Needs
+    ================================================== -->
+<meta charset="utf-8">
+<!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blog Post</title>
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Favicon
+    ================================================== -->
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+
+<link href="css/animate.css" rel="stylesheet" media="screen">
+
+<!-- Stylesheet
+    ================================================== -->
+<link rel="stylesheet" type="text/css"  href="style.css">
+<link href='https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700|Montserrat:100,200,300,300i,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
+
+</head>
+<body class="single">
+  <!-- Navigation
+    ==========================================-->
+  <nav id="top-menu" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span
+            class="icon-bar"></span></button>
+        <a class="navbar-brand" href="https://en.wikipedia.org/wiki/Special:Random" target="_blank" rel="noopener noreferrer" style="opacity: 0.8;"><img src="img/logo-top.png" class="img-responsive" width=50><span>random wikipedia page</span></a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <!--nav icon-->
+        <a id="nav-icon"> <span></span> <span></span> <span></span> </a>
+        <!--nav icon end-->
+
+        <ul id="nav-top" class="nav navbar-nav navbar-right">
+          <li><a href="#home-banner">Home</a></li>
+          <li><a href="#my-project-block">Projects</a></li>
+          <li><a href="https://reddit.com/">Reddit</a></li>
+          <li><a href="mailto:mlt@dr.com?subject=Nice%20email%20you%20got%20there">Contact</a></li>
+        </ul>
+
+
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+
+
+<div id="Blog-post">
+
+
+  <header class="entry-header" style="background-image: url(https://raw.githubusercontent.com/mlk525/mlk525.github.io/master/mind-space/landing-page.png);">
+    <div class="content  wow fadeInUp">
+      <div class="container ">
+        <!--breadcrumb-->
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Projects</a></li>
+          <li class="breadcrumb-item active">Audio Project</li>
+        </ol>
+        <!--/breadcrumb-->
+        <h1>Mind Space Interactive Experience</h1>
+        <hr>
+      </div>
+  </header>
+  <div class="container">
+    <div class="row wow fadeInUp">
+      <!--blog posts container-->
+      <div class="col-md-9 col-sm-8 single-post">
+<article class="post">
+										<p>Mind Space is a site-specific auditory experince centered around writing a letter, created to raise awareness for mental health and individual mental health struggles. Divided into three parts, the website first indicates that it is an audio-based by prompting the user to use headphones, before playing the first sound file. Intended to present a calm and positive environment, the user is introduced to the creators of the site, who are apparently located in a coffee shop. The song Prelude in C Major, composed by J.S. Bach, is used to set the ambience and tone of the experience. The creators casually talk about Mind Space, its purpose, and how the user can expect to interact with it. They then prompt the user to click on an arrow to the bottom left of the page which will take them to the letter-writing section.</p>
+
+<p>The blank letter allows the user to fill up to 10 lines of text, in addition to their name. While typing, animated circles appear and fade around and behind the letter, while piano notes play on each key press. The user is welcome to write a letter addressed to everybody, someone in particular, or nobody. Brain dumps and rants are welcome; the purpose is to allow the user to acknowledge and address any difficult emotions or experiences, however they wish. The sounds and visualizations are intended to contribute to the feel of the space the user finds themself in, and represent their state of mind to a degree.</p>
+
+<p>Finally, when the 'Send' button is clicked, the letter is folded and pushed into an envelope (an animation intended to convey a sense of closure), and the final sound file plays. The creators address the user, giving them to choice to write another letter or learn more about mental health through listed resources.</p>
+<h2>Process</h2>
+<p>While assembling the audio, I worked exclusively with Audacity; this presented a few challenges, but nothing a few plug-ins couldn't fix. Hessa and I recorded the dialogue for both the intro and outro using our phones, but because we were in different locations with different devices, making it seem like we were in the same room for the conversation took a lot of work. Following some very helpful suggestions from Kristin, I cleaned up the audio and used the Parametric EQ and Filter Curve functions to make the audio files sound similar. I also made use of the Panning function and "moved" each speaker to either side. I completed the pieces by adding ambient noise recorded at a coffee shop, recordings of a chair being pulled out and sat on, and myself stirring a cup and sipping "coffee". I also downloaded an audio file of footsteps walking, and once again using Panning, I managed to make it sound like someone entered from the right and walked over to the left. Normalizing the audio and using the Filter Curve option really allowed me to nail the soundscape. Finally, to add background music I combined an online recording of Prelude in C Major, with simple accompaniment over the opening notes played by me on violin (over a slower version of the piece). I recorded the violin by duct-taping my phone to a desk lamp and positioning it over the f-holes of the instrument. The outro was completed very similarly, as there were no real differences aside from the dialogue.</p>
+
+<p>The musical keyboard was a part of the concept from the start, so I had begun experimenting with it from day one. The github repo I used to implement the first prototype is a clone of Patatap, which is an animation and sound website. Pressing any key from A to Z would produce a note from the C Major arpeggio (C, E, G). I used the Howler.js JavaScript sound library to implement the playing of the notes, which I found on an online open source sound library.</p>
+
+<img src="https://raw.githubusercontent.com/mlk525/mlk525.github.io/master/mind-space/keyboard-test.png" height="500">
+
+<h2>Reflection</h2>
+<p>With most projects I've worked on in the past, there has been a clear difference between initial expectations and the final iteration of the project; this one was different, in that Hessa and I were very pleased with the outcome of our work, and couldn't think of any additions to work on in the hours before class. The visual design, audio experience, and website functionality satisfied all our requirements. One function we weren't able to add was the ability to send a letter to another user by generating a link, but given how complex it is to design such a function, we decided against working on it. In any case, the website achieved everything we had initially intended for it to.</p>
+
+
+<br></br>
+<br></br>
+<br></br>
+
+			</article>
+        <!--aside-->
+
+        <footer id="bottom-footer">
+          <div class="container">
+            <div class="row wow fadeInUp">
+              <!--bottom nav-->
+              <div class="col-md-4 col-sm-4 col-xs-12">
+                <nav class="bottom-nav">
+                  <ul>
+                    <li>
+                      <a href="https://tinyurl.com/pqqux9a" style="font-size: 1.3em;">Projects&nbsp;&nbsp;</a>
+                      <a href="https://tinyurl.com/pqqux9a" style="font-size: 1.3em;"> FAQ&nbsp;&nbsp;</a>
+                      <a href="https://tinyurl.com/kugn4dx" style="font-size: 1.3em;"> Press&nbsp;&nbsp;</a></br>
+                      <a href="https://creativecommons.org/licenses/by/4.0/" style="font-size: 1.3em;"> Copyright Information</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+
+            </div>
+          </div>
+        </footer>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/SmoothScroll.js"></script>
+        <script type="text/javascript" src="js/jquery.isotope.js"></script>
+
+        <script src="js/jquery.waypoints.min.js"></script>
+        <!-- Custom Javascripts
+          ================================================== -->
+        <script type="text/javascript" src="js/main.js"></script>
+        <script src="js/wow.min.js"></script>
+
+        <script>
+          new WOW().init();
+        </script>
+        </body>
+
+        </html>
