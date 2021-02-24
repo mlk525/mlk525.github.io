@@ -1,0 +1,2 @@
+For this assignment, we decided to update the Homeless Vehicle project by Krzysztof Wodiczko which took place in the late 1980s in New York City. Although this project has a physical adaptation that offered both practical and symbolic functions, we decided to reflect the similar symbolic meanings and adapt it to new media.
+For us, the symbolic representation of our project that was adapted from the Homeless Vehicle were the state of statelessness, temporary lives, and the unequal access of information about one's own living situation. 
