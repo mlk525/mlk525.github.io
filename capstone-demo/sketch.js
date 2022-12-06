@@ -3,8 +3,12 @@ let video;
 let poseNet;
 let noseX = 0;
 let noseY = 0;
-let eyelX = 0;
-let eyelY = 0;
+
+let myRec = new p5.SpeechRec();
+
+let eyes;
+let x = -5;
+let commandFoo = false;
 
 function preload() {
   back = loadImage("van gogh_back.png");
@@ -20,6 +24,22 @@ function setup() {
   video.hide();
   poseNet = ml5.poseNet(video, modelReady);
   poseNet.on("pose", gotPoses);
+  
+  myRec.onResult = readResult;
+  
+  myRec.continuous = true;
+  myRec.interimResults = false;
+  myRec.start();
+}
+
+function readResult(){   
+  str1 = myRec.resultString;
+  console.log(str1);
+  
+  if(str1.includes("roll your eyes")){
+    commandFoo = true;
+  }
+
 }
 
 function gotPoses(poses) {
@@ -42,12 +62,20 @@ function modelReady() {
 
 function draw() {
   //image(video, 0, 0);
-
-  let eyeLX = map(width - noseX, 0, back.width, width / 2 - 5, width / 2 + 10);
-  let eyeLY = map(noseY, 0, back.height, height / 2, height / 2 + 10);
-
-  let eyeRX = map(width - noseX, 0, back.width, width / 2 - 5, width / 2 + 10);
-  let eyeRY = map(noseY, 0, back.height, height / 2, height / 2 + 10);
+  
+  if(commandFoo){
+    eyes = rollEyes();
+  }
+  
+  else{
+    eyes = trackEyes();
+  }
+  
+  
+  let eyeLX = eyes.eyeLX,
+      eyeLY = eyes.eyeLY,
+      eyeRX = eyes.eyeRX,
+      eyeRY = eyes.eyeRY;
 
   if (back.width / back.height < width / height) {
     image(
@@ -95,20 +123,60 @@ function draw() {
   } else {
     image(back, width / 2, height / 2, width, height);
   }
+    
 
-  //let pupil = color(87, 48, 22);
-  //let iris = color(143, 90, 42);
+}
 
-  //let d = dist(noseX, noseY, eyelX, eyelY);
-  //let pupilD = 31;
+function trackEyes(){
 
-  //let leftiX = map(width - noseX, 0, img.width, 338, 390);
-  //let leftiY = map(noseY, 0, img.height, 273, 286);
+  let eyeLX = map(width - noseX, 0, back.width, width / 2 - 5, width / 2 + 10),
+  eyeLY = map(noseY, 0, back.height, height / 2, height / 2 + 10),
+  eyeRX = map(width - noseX, 0, back.width, width / 2 - 5, width / 2 + 10),   eyeRY = map(noseY, 0, back.height, height / 2, height / 2 + 10);
+  
+  return {eyeLX, eyeLY, eyeRX, eyeRY};
+}
 
-  //let rightiX = map(width - noseX, 0, img.width, 498, 550);
-  //let rightiY = map(noseY, 0, img.height, 274, 286);
+function rollEyes(){
+  
+  let eyeLX = width/2,
+      eyeLY = height/2,
+      eyeRX = width/2,
+      eyeRY = height/2;
+  
+  if (x < 8){
+    let y = 4-(x*x/8);
+    
+    eyeLX -= x;
+    eyeRX -= x;
+    
+    eyeLY -= y;
+    eyeRY -= y;
+    
+    x += 1;
+    
+    return {eyeLX, eyeLY, eyeRX, eyeRY};
+    
+  }
+  
+  eyeLX = width/2-5;
+  eyeLY = height/2+2;
+  eyeRX = width/2-5;
+  eyeRY = height/2+2;
+  
+  commandFoo = false;
+  x = -5;
+  return {eyeLX, eyeLY, eyeRX, eyeRY};
+}
 
-  //fill(pupil);
-  //ellipse(leftiX, leftiY, pupilD);
-  //ellipse(rightiX, rightiY, pupilD);
+function sleep(milliseconds) {
+  
+  const date = Date.now();
+  let currentDate = null;
+  do {
+    currentDate = Date.now();
+  } while (currentDate - date < milliseconds);
+}
+
+function mouseClicked() {
+  commandFoo = true;
 }
