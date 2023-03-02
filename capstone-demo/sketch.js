@@ -120,7 +120,7 @@ function draw() {
     
     else if (d > 80){
       glitch_front.show();
-      if (frameCount%50 == 0){
+      if (frameCount%200 == 0){
         text_num = (text_num+1)%4;
       }
       console.log(frameCount);
