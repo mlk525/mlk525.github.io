@@ -11,11 +11,25 @@ let fnoseX = 0,
 
 let isLoaded = false;
 let glitch_front;
-let glitch_text;
+let glitch_skull;
+
+let glitch_text1;
+let glitch_text2;
+let glitch_text3;
+let glitch_text4;
+
+let mona = 'mona lisa_full.jpg';
 let mona_front ='mona lisa_front.png';
 let mona_eyes = 'mona lisa_eyes.png';
 let mona_back = 'mona lisa_back.png';
-let mona_text = 'mona lisa_text.png';
+
+let text_num = 0;
+let mona_text1 = 'mona lisa_text1.png';
+let mona_text2 = 'mona lisa_text2.png';
+let mona_text3 = 'mona lisa_text3.png';
+let mona_text4 = 'mona lisa_text4.png';
+
+let mona_skull = 'mona lisa_skeleton.png';
 let glitched = false;
 let debug = false;
 
@@ -25,12 +39,31 @@ function preload() {
   front = loadImage(mona_front);
   eyes = loadImage(mona_eyes);
   back = loadImage(mona_back);
-  loadImage(mona_front, function(img) {
+  
+  loadImage(mona, function(img) {
         glitch_front = new Glitch(img);
-        isLoaded = true;
+
     });
-  loadImage(mona_text, function(img) {
-        glitch_text = new Glitch(img);
+  
+  loadImage(mona_skull, function(img) {
+        glitch_skull = new Glitch(img);
+
+    });
+  
+  loadImage(mona_text1, function(img) {
+        glitch_text1 = new Glitch(img);
+
+    });
+  loadImage(mona_text2, function(img) {
+        glitch_text2 = new Glitch(img);
+
+    });
+  loadImage(mona_text3, function(img) {
+        glitch_text3 = new Glitch(img);
+
+    });
+  loadImage(mona_text4, function(img) {
+        glitch_text4 = new Glitch(img);
         isLoaded = true;
     });
 }
@@ -61,7 +94,7 @@ function gotPoses(poses) {
 
 function draw() {
   let d = dist(noseX, noseY, eyelX, eyelY);
-  console.log(d);
+  //console.log(d);
   
   fnoseX = map(noseX, 0, video.width, width, 0);
   fnoseY = map(noseY, 0, video.height, 0, height);
@@ -76,11 +109,42 @@ function draw() {
   pop();
 
   if ((isLoaded) && ((d > 40) || (glitched))) {
-
-    glitch_front.show();
     
-    if (d > 70){
-      glitch_text.show();
+    if ((d > 40) && (d < 65)){
+    glitch_front.show();
+  }
+    
+    else if ((d > 70) && (d < 80)){
+      glitch_skull.show();
+    }
+    
+    else if (d > 80){
+      glitch_front.show();
+      if (frameCount%50 == 0){
+        text_num = (text_num+1)%4;
+      }
+      console.log(frameCount);
+      console.log(text_num);
+      
+      switch(text_num){
+        case 0:
+          glitch_text1.show();
+          break;
+        case 1:
+          glitch_text2.show();
+          break;
+        case 2:
+          glitch_text3.show();
+          break;
+        case 3:
+          glitch_text4.show();
+          text_num = 4;
+          break;
+        case 4:
+
+          text_num = 3;
+          break;
+      }
     }
   }
   
