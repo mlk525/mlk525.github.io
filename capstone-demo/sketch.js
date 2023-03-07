@@ -22,6 +22,7 @@ let mona = 'mona lisa_full.jpg';
 let mona_front ='mona lisa_front.png';
 let mona_eyes = 'mona lisa_eyes.png';
 let mona_back = 'mona lisa_back.png';
+let mona_bg = 'mona lisa_bg.jpg';
 
 let text_num = 0;
 let mona_text1 = 'mona lisa_text1.png';
@@ -33,14 +34,27 @@ let mona_skull = 'mona lisa_skeleton.png';
 let glitched = false;
 let debug = false;
 
+let gotTextTime = false;
+let pastTextMillis = 0;
+let currentTextMillis = 0;
+
+let gotBGTime = false;
+let pastBGMillis = 0;
+let currentBGMillis= 200000;
+
+let mona_left = false;
+
 let x,y;
+
+
 
 function preload() {
   front = loadImage(mona_front);
   eyes = loadImage(mona_eyes);
   back = loadImage(mona_back);
+  bg = loadImage(mona_bg);
   
-  loadImage(mona, function(img) {
+  loadImage(mona_front, function(img) {
         glitch_front = new Glitch(img);
 
     });
@@ -77,6 +91,7 @@ function setup() {
     video.hide();
     poseNet = ml5.poseNet(video);
     poseNet.on('pose', gotPoses);
+    
 }
 
 function gotPoses(poses) {
@@ -94,38 +109,35 @@ function gotPoses(poses) {
 
 function draw() {
   let d = dist(noseX, noseY, eyelX, eyelY);
-  //console.log(d);
+  console.log(d);
   
   fnoseX = map(noseX, 0, video.width, width, 0);
   fnoseY = map(noseY, 0, video.height, 0, height);
   x = map(fnoseX, 0, width, -14, 2);
-  y = map(fnoseY, 0, height, -2, 6);
+  y = map(fnoseY, 0, height, -1, 8);
   
-  push();
-  imageMode(CENTER);
-  image(back, width/2,height/2);
-  image(eyes, width/2 + x,height/2 + y);
-  image(front, width/2,height/2);
-  pop();
+  
+  
 
-  if ((isLoaded) && ((d > 40) || (glitched))) {
+  if (isLoaded) {
+    push();
+      imageMode(CENTER);
+      image(back, width/2,height/2);
+      image(eyes, width/2 + x,height/2 + y);
+      image(front, width/2,height/2);
+    pop();
     
-    if ((d > 40) && (d < 65)){
-    glitch_front.show();
-  }
-    
-    else if ((d > 70) && (d < 80)){
-      glitch_skull.show();
+
+   if ((d>25) && (d < 40)){
+      glitch_front.show();
     }
     
-    else if (d > 80){
+    else if ((d > 40) && (d < 70)){
       glitch_front.show();
-      if (frameCount%200 == 0){
-        text_num = (text_num+1)%4;
+      if (!gotTextTime){
+        pastTextMillis = getMillis();
+        gotTextTime = true;
       }
-      console.log(frameCount);
-      console.log(text_num);
-      
       switch(text_num){
         case 0:
           glitch_text1.show();
@@ -135,19 +147,49 @@ function draw() {
           break;
         case 2:
           glitch_text3.show();
+          
           break;
         case 3:
           glitch_text4.show();
-          text_num = 4;
+          gotBGTime = false;
           break;
-        case 4:
-
-          text_num = 3;
-          break;
+        }
+        currentTextMillis = millis();
+    //console.log(pastTextMillis);
+      if (currentTextMillis - pastTextMillis > 7000)       {
+        gotTextTime = false;
+        text_num = (text_num+1)%4;  
       }
     }
+    
+    else if ((d > 70) && (d < 80)){
+      glitch_skull.show();
+    }
+    
+    else if (d > 80) {
+      
+      if (!gotBGTime){
+        pastBGMillis = getMillis();
+        gotBGTime = true;
+        mona_left = true;
+      }
+
+    }
+
+    if (mona_left){
+      push();
+      imageMode(CENTER);
+      image(bg, width/2,height/2);
+      pop();
+      currentBGMillis = millis();
+      if (currentBGMillis - pastBGMillis > 10000)       {
+        
+        mona_left = false;  
+      }
+      
+    }
+
   }
-  
   if (debug){
     fill(0,0,255);
     ellipse(width-fnoseX, fnoseY, d);
@@ -157,6 +199,10 @@ function draw() {
   // textSize(14);
   // text('FPS: ' + floor(frameRate()), 20, 30);
 
+}
+
+function getMillis(){
+  return millis();
 }
 
 class Glitch {
