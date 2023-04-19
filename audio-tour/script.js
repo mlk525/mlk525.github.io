@@ -1,4 +1,4 @@
-const audio = new Audio('La.mp3');
+const audio = new Audio('audio_tour.mp3');
 const playButton = document.getElementById('play-button');
 
 playButton.addEventListener('click', () => {
